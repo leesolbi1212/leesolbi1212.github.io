@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "ChosunGu";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
+  font-family: "GowunDodum-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "ChosunGu";
+  font-family: "GowunDodum-Regular";
   margin: 0;
 }
 h1,
@@ -105,4 +105,47 @@ button:focus {
 .header__menu__item:active {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
+}
+
+/* Home */
+#home {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 7rem 1rem 5rem;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 3px solid var(--color-accent);
+  object-fit: cover;
+  /*이미지가 부모 요소의 크기에 맞춰 비율을 유지하면서 꽉 차도록 설정 */
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.home__title--string {
+  color: var(--color-accent);
+}
+
+.home__description {
+  font-size: 1.5rem;
+}
+.home__contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.home_contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
 }

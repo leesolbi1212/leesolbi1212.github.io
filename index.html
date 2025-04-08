@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Solbi&#39;s Portfolio</title>
+    <title>LeeSolbi&#39;s Portfolio</title>
     <meta name="description" content="세상에서 가장 뛰어난 AI 개발자" />
     <meta name="author" content="LeeSolbi" />
     <!-- 소셜 미디어 공유용 메타 태그(Open Graph) -->
@@ -29,16 +29,18 @@
     <header class="header">
       <div class="header__logo">
         <img class="header__logo__img" src="./image/profile2.ico" alt="Logo" />
-        <h1 class="header__logo__title"><a href="#home">Lee Solbi</a></h1>
+        <h1 class="header__logo__title">
+          <a href="#home">Lee Sol Bi</a>
+        </h1>
       </div>
       <!-- 책갈피 기능 -->
       <nav class="header__nav">
-        <ul class="header__manu">
-          <li><a href="#home" class="header__menu__item active">홈으로</a></li>
-          <li><a href="#about" class="header__menu__item">LeeSolbi</a></li>
-          <li><a href="#skills" class="header__menu__item">기술 스택</a></li>
-          <li><a href="#work" class="header__menu__item">프로젝트</a></li>
-          <li><a href="#license" class="header__menu__item">자격증</a></li>
+        <ul class="header__menu">
+          <li><a href="#home" class="header__menu__item active">Home</a></li>
+          <li><a href="#about" class="header__menu__item">Info</a></li>
+          <li><a href="#skills" class="header__menu__item">Skills</a></li>
+          <li><a href="#work" class="header__menu__item">Project</a></li>
+          <li><a href="#license" class="header__menu__item">License</a></li>
           <li><a href="#contact" class="header__menu__item">Contanct</a></li>
         </ul>
       </nav>
@@ -49,10 +51,19 @@
     <main>
       <!-- Home 시작 -->
       <section id="home">
-        <img src="./image/profile2.png" alt="Leesolbi's Profile" />
-        <h2>안녕하세요. 이솔비입니다!</h2>
-        <p>우주에서 가장 뛰어난 ai개발자 이솔비입니다.</p>
-        <a href="#contact">Contact</a>
+        <img
+          class="home__avatar"
+          src="./image/profile2.png"
+          alt="Leesolbi's Profile"
+        />
+        <h2 class="home__title">
+          안녕하세요. <br />
+          <strong class="home__title--string">이솔비</strong> 입니다!
+        </h2>
+        <p class="home__description">
+          우주에서 가장 뛰어난 ai개발자 이솔비입니다.
+        </p>
+        <a class="home__contact" href="#contact">Contact</a>
       </section>
       <!-- Home 끝 -->
 
@@ -311,7 +322,7 @@
 
       <!-- footer 시작  -->
       <footer id="contact">
-        <h2>연락주세요</h2>
+        <h2>Contact me</h2>
         <p>dmddnjs77@gmail.com</p>
         <ul>
           <li>
