@@ -427,3 +427,109 @@ button:focus {
 .contact__link:hover {
   color: var(--color-accent);
 }
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .header__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .tools {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  .tools__coding {
+    grid-row: span 1;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .job__img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo__title {
+    font-size: 1.5rem;
+  }
+
+  .header__menu__item {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+
+  .home__avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__description {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project__img {
+    height: 200px;
+  }
+
+  .licenses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .license {
+    width: 100%;
+    max-width: 300px;
+  }
+}
